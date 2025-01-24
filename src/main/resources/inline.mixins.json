@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.samsthenerd.inline.mixin",
+  "plugin": "com.samsthenerd.inline.mixin.InlineMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "core.MixinInlineStyle",
+    "core.MixinInlineStyleSerializer"
+  ],
+  "client": [
+    "compat.MixinCreateDisplayRendering",
+    "compat.MixinCreateMakeBoardsRightLength",
+    "compat.MixinCreateMakeDisplaySectionsNotTooLong",
+    "core.MixinInlineParsing",
+    "core.MixinInlineRendering",
+    "core.MixinSetTessBuffer",
+    "core.MixinTextWiden",
+    "feature.MixinAddModIconToTooltip",
+    "feature.MixinHijackFeatherForTooltip",
+    "feature.playerskins.MixinAccessPlayerModelParts",
+    "feature.playerskins.MixinClientAccessor",
+    "feature.playerskins.MixinClientHeadChecker",
+    "feature.playerskins.MixinTurnOffLabel"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
+  
